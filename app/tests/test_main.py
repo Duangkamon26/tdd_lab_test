@@ -12,4 +12,4 @@ def test_read_main():
 def test_read_main_two():
     response = client.post("/")
     assert response.status_code == 200
-    assert response.json() == {"Hello": "WorldTestCItwo"}
+    assert response.json() == {"Hello": "World1"}
