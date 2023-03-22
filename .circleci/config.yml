@@ -52,7 +52,7 @@ jobs:
           command: aws s3 cp function.zip s3://duangkamonsa/function.zip
       - run:
           name: Deploy new Lambda
-          command: aws lambda update-function-code --function-duangkamonsa fastapi --s3-bucket duangkamonsa --s3-key function.zip
+          command: aws lambda update-function-code --function-name fastapi --s3-bucket duangkamonsa --s3-key function.zip
 
 workflows:
   build-test-and-deploy:
